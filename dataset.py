@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-This program reads the metadata, reviewContent files and prodFeatures, userFeatures, reviewFeatures feature files
+This program reads the metadata, reviewContent files and prodFeatures, userFeatures, reviewFeatures feature files 
 Filters all the files based on prod having > 800 reviews 
 Builds the graph from the filtered metadata and saves it to .mat file
 
