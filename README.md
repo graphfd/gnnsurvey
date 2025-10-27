@@ -4,7 +4,7 @@
 
 
 The YelpChi, YelpNyc, YelpZip datasets are obtained from the Yelp platform and are classified based on Yelp's filtering algorithm
-and obtained from [Collective Opinion Spam Detection](https://shebuti.com/wp-content/uploads/2016/06/15-kdd-collectiveopinionspam.pdf). 
+and obtained from [Collective Opinion Spam Detection](https://dl.acm.org/doi/pdf/10.1145/2783258.2783370). 
 
 
 The dataset contains user\_id / review\_id, product\_id, star rating, label, date, review\_content.
@@ -42,16 +42,16 @@ In the table below, the first **YelpChi** dataset is directly obtained from [`Ca
 The next three datasets are the replicated versions.
 
 
-| Dataset  | #Nodes (Fraud\%)   | Relation   | #Edges    	| Avg. Feature Similarity | Avg. Label Similarity  |
+| Dataset  | #Nodes (Fraud\%)   | Relation   | #Edges    	  | Avg. Feature Similarity | Avg. Label Similarity  |
 |----------|--------------------|----------- |--------------|-------------------------|------------------------|
-|**YelpChi**  | 45,954 (14.5\%)  | *R-U-R*   | 49,315    	| 0.83             		  | 0.90                   |
-| CareGNN  |                     | *R-T-R*   | 573,616   	| 0.79                    | 0.05                   |
-|          |                     | *R-S-R*   | 3,402,743 	| 0.77                    | 0.05                   |
-|          |                     | *ALL*     | 3,846,979 	| 0.77                    | 0.07                   |
-| **YelpChi** | 45,954 (14.5\%)  | *R-U-R*   | 49,315    	| -                       | -                      |
-|          |                     | *R-T-R*   | 573,616   	| -                       | -                      |
-|          |                     | *R-S-R*   | 3,402,743 	| -                       | -                      |
-|          |                     | *ALL*     | 3,846,979 	| -                       | -                      |
+|**YelpChi**  | 45,954 (14.5\%)  | *R-U-R*   | 49,315    	  | 0.83             		    | 0.90                   |
+| CareGNN  |                     | *R-T-R*   | 573,616   	  | 0.79                    | 0.05                   |
+|          |                     | *R-S-R*   | 3,402,743 	  | 0.77                    | 0.05                   |
+|          |                     | *ALL*     | 3,846,979 	  | 0.77                    | 0.07                   |
+| **YelpChi** | 45,954 (14.5\%)  | *R-U-R*   | 49,315    	  | -                       | -                      |
+|          |                     | *R-T-R*   | 573,616   	  | -                       | -                      |
+|          |                     | *R-S-R*   | 3,402,743 	  | -                       | -                      |
+|          |                     | *ALL*     | 3,846,979 	  | -                       | -                      |
 | **YelpNyc** | 191,398 (10.4\%) | *R-U-R*   | 498,732    	| -                       | -                      |
 |          |                     | *R-T-R*   | 2,379,443   	| -                       | -                      |
 |          |                     | *R-S-R*   | 12,214,234 	| -                       | -                      |
@@ -67,7 +67,7 @@ The similarity scores need to be calculated based on [`simi_comp.py`](https://gi
 
 **Features**
 
-For the node features, 32 handcrafted features from [Collective Opinion Spam Detection](https://shebuti.com/wp-content/uploads/2016/06/15-kdd-collectiveopinionspam.pdf) are taken. 
+For the node features, 32 handcrafted features from [Collective Opinion Spam Detection](https://dl.acm.org/doi/pdf/10.1145/2783258.2783370) are taken. 
 15 Review, 9 User, 8 Product features are concatenated for each review node. Reviews from same user/product have the same user/product features.
 
 The features are spam priors calculated based on Sec. 2.2.1 of the above paper.
