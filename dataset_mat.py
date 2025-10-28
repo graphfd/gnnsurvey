@@ -23,6 +23,8 @@ reviewFeatures = 'z_YelpChi_priorR.txt'
 line 189 : metadata_filtered_file.to_csv('metadata_filtered_file_YelpChi')
 
 line 507 : metadata_filtered_file_path = 'metadata_filtered_file_YelpChi'
+
+Credit : https://github.com/YingtongDou/CARE-GNN
 """
 
 
