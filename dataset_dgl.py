@@ -5,7 +5,7 @@ Transforms YelpChi.mat to yelp.dgl
 Set the dataset_path in main [line 46] to where YelpChi.mat is present
 For other names, change yelp_path [line 61] from YelpChi.mat to nyc,zip
 
-To run : python Yelp_dgl_code.py --dataset yelp
+To run : python dataset_dgl.py --dataset yelp
 
 Credit : https://github.com/shifengzhao/H2-FDetector/blob/master/src/data_preprocess.py
 """
